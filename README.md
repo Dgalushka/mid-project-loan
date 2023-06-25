@@ -5,12 +5,12 @@
 In this mini-project we will analyze the small data-sample (614 rows by 13 columns) and will try to build a machine-learning model in order to predict approval or denial of the loan application.
 
 ## 1. Data exploration and cleaning
-        In this section I have standartized the data-set, brought column names to standard form, dropped unnecessary colum and removed NaN-values by filling categorycal values with MEDIAN and variables with MEAN per each column. 
+In this section I have standartized the data-set, brought column names to standard form, dropped unnecessary colum and removed NaN-values by filling categorycal values with MEDIAN and variables with MEAN per each column. 
 
 <img src="pics/CleanDF.png" width = 400 title="Cleaned Data Frame" />
 
 
-        I had to remove about 50 rows because there were NaN-values in Credit History column, that would heavily influence the results if I would fill them with information that is not correct.
+I had to remove about 50 rows because there were NaN-values in Credit History column, that would heavily influence the results if I would fill them with information that is not correct.
 
 ## 2. EDA
 
@@ -64,9 +64,11 @@ In this mini-project we will analyze the small data-sample (614 rows by 13 colum
 
 ## Conclusion
 
-        The results in predicting the the loan status with the logistics regression model could be better.
-         Oversampler have helped to balanced out the data a bit, but we lost too much value for 'N' predictions, while did not gain a lot in 'Y'. Standartizing the data-frame increased the numbers of succesful predictions by very small part.
-        Perhaps, I would have better results having mroe data to analyze, or if I tried more tools such as normalization and other ML tools. Nevertheless I was able to still visuallize some data that could bring interesting insights. For instance:
+The results in predicting the the loan status with the logistics regression model could be better.
+
+Oversampler have helped to balanced out the data a bit, but we lost too much value for 'N' predictions, while did not gain a lot in 'Y'. Standartizing the data-frame increased the numbers of succesful predictions by very small part.
+
+Perhaps, I would have better results having mroe data to analyze, or if I tried more tools such as normalization and other ML tools. Nevertheless I was able to still visuallize some data that could bring interesting insights. For instance:
 
 - Most of the applicants with loans status approved had a credit history
 - Applicants with approved loans without credit history had a higher income/ or their coapplicants had a higher income than avarage data sample
